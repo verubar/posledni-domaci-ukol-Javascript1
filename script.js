@@ -13,13 +13,12 @@ const numbers = [
 
 // Vypište do stránky druhé mocniny všech čísel.
 // numbers.forEach((hodnota) => {
-//     if (hodnota >= 0) {
-//     document.body.innerHTML += `${Math.sqrt(hodnota)} <br>`}
-// });
+//     document.body.innerHTML += `${Math.pow(hodnota, 2)} <br>`}
+// );
 
 // Vypište do stránky pouze záporná čísla.
 // numbers.forEach((hodnota) => {
-//     if (hodnota <= 0) {
+//     if (hodnota < 0) {
 //     document.body.innerHTML += `${hodnota} <br>`}
 // });
 
@@ -53,7 +52,7 @@ const numbers = [
 // const ciloveCislo = 5;
 // numbers.forEach((hodnota) => {
 //     const vzdalenost = Math.abs(hodnota - ciloveCislo);
-//     document.body.innerHTML += `${Math.sqrt(vzdalenost)} <br>`;
+//     document.body.innerHTML += `${Math.pow(vzdalenost, 2)} <br>`;
 //   });
 
 // Spočítejte, kolik je v seznamu záporných čísel.
@@ -65,7 +64,7 @@ const numbers = [
 // });
 // document.body.innerHTML += `${vysledek}`;
 
-// Spočítejte součet všech čísel v poli.
+// Spočítejte součet všech čísel v poli. ***
 // let soucet = 0;
 // numbers.forEach((hodnota) => {
 //     soucet = soucet + hodnota; // můžeme zapsat jako soucet += hodnota; 
@@ -74,6 +73,8 @@ const numbers = [
 
 // Spočítejte průměr všech čísel v poli.
 // let soucet = 0;
+// let predsoucet = 0;
+// let vysledek = 0;
 // numbers.forEach((hodnota) => {
 //     predsoucet = soucet + hodnota;
 //     vysledek = predsoucet / numbers.length
@@ -83,7 +84,7 @@ const numbers = [
 // Spočítejte součet všech kladných čísel v poli.
 // let soucet = 0;
 // numbers.forEach((hodnota) => {
-//     if (hodnota > 1) {
+//     if (hodnota >= 1) {
 //         soucet = soucet + hodnota;
 //     }
 // });
