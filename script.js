@@ -41,8 +41,8 @@ numbers.forEach((hodnota) => {
 // Vypište do stránky pouze ta čísla, jejíchž absolutní hodnota je dělitelná třemi.
 const h6 = document.querySelector('.uloha6');
 numbers.forEach((hodnota) => {
-    if ((((hodnota)) % 3) ===  0) {
-         h6.innerHTML += ` ${Math.abs(hodnota)}, `
+    if (((Math.abs(hodnota)) % 3) ===  0) {
+         h6.innerHTML += ` ${(hodnota)}, `
     }
 });
 
@@ -83,19 +83,18 @@ h10.innerHTML += ` ${soucet}`;
 // Spočítejte průměr všech čísel v poli.
 const h11 = document.querySelector('.uloha11');
 let soucet2 = 0;
-let predsoucet = 0;
 let vysledek2 = 0;
 numbers.forEach((hodnota) => {
-    predsoucet = soucet2 + hodnota;
-    vysledek2 = predsoucet / numbers.length
+    soucet2 = soucet2 + hodnota;
 });
+vysledek2 = soucet2 / numbers.length
 h11.innerHTML += ` ${vysledek2}`;
 
 // Spočítejte součet všech kladných čísel v poli.
 const h12 = document.querySelector('.uloha12');
 let soucet3 = 0;
 numbers.forEach((hodnota) => {
-    if (hodnota >= 1) {
+    if (hodnota > 0) {
         soucet3 = soucet3 + hodnota;
     }
 });
